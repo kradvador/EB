@@ -1,0 +1,105 @@
+
+
+div[class="row"] {
+    margin : 25px 0px 25px 0px;
+}
+
+@font-face {
+    font-family: cassandra;
+    src: url('../fonts/cassandra.ttf');
+}
+
+
+
+#main_title, h1 {
+    font-family: cassandra;
+    letter-spacing: 4px;
+}
+
+h1 {
+    line-height: 50px;
+    font-size: 2em;
+}
+
+h2 {
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+    background-color: #F8F8F8;
+    padding : 25px 0px 25px 0px;
+    font-size: 1.1em;
+    position: fixed;
+    z-index: 99999;
+    bottom: 0;
+    display: none;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.show, .footer:hover {
+    display: block;
+}
+
+.global_chat {
+    border-left: 1px solid lightgrey;
+}
+
+.titre_col {
+    font-weight: bold;
+}
+
+.description {
+    text-align: justify;
+}
+
+.img_secondaire {
+    display: flex;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.photo2 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.img-responsive {
+    -webkit-border-radius: 25px 0px 25px 0px;
+    -moz-border-radius: 25px 0px 25px 0px;
+    border-radius: 25px 0px 25px 0px;
+}
+
+
+/*MEDIA QUERIES*/
+
+
+@media (max-width: 576px) {
+    h1 {
+        line-height: 30px;
+        font-size: 0.9em;
+    }
+
+    .img_secondaire {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #accueil-chatons {
+        display: none;
+    }
+
+    h1 {
+        line-height: 30px;
+        font-size: 1.2em;
+    }
+
+    #main_title {
+        font-size: 1em;
+    }
+}
